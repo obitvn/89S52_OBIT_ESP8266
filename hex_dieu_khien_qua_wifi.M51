@@ -1,0 +1,793 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    11/02/2018  15:51:25  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+F:\CAI PHAN MEM\KEIL C 8051\C51\BIN\BL51.EXE code_dieu_khien_qua_wifi.obj TO hex_dieu_khien_qua_wifi RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  code_dieu_khien_qua_wifi.obj (CODE_DIEU_KHIEN_QUA_WIFI)
+  F:\CAI PHAN MEM\KEIL C 8051\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\CAI PHAN MEM\KEIL C 8051\C51\LIB\C51S.LIB (?C?CLDPTR)
+  F:\CAI PHAN MEM\KEIL C 8051\C51\LIB\C51S.LIB (?C?STRCMP)
+
+
+LINK MAP OF MODULE:  hex_dieu_khien_qua_wifi (CODE_DIEU_KHIEN_QUA_WIFI)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     006CH     UNIT         ?DT?CODE_DIEU_KHIEN_QUA_WIFI
+            DATA    0074H     0005H     UNIT         _DATA_GROUP_
+            IDATA   0079H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0020H     UNIT         ?PR?_SEND_BUF?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0023H     0003H     ABSOLUTE     
+            CODE    0026H     0213H     UNIT         ?CO?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0239H     01D7H     UNIT         ?PR?KET_NOI?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0410H     01B4H     UNIT         ?C?LIB_CODE
+            CODE    05C4H     014CH     UNIT         ?PR?MAIN?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0710H     00A5H     UNIT         ?PR?XULY?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    07B5H     009BH     UNIT         ?PR?UART?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0850H     0090H     UNIT         ?PR?WLAN_INIT?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    08E0H     0066H     UNIT         ?PR?PROG_CONTROL?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0946H     005EH     UNIT         ?PR?_NUM_STR?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    09A4H     0045H     UNIT         ?PR?LCD_INIT?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    09E9H     0043H     UNIT         ?PR?READTEMPERATURE?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0A2CH     0032H     UNIT         ?PR?_LCD_GOTOXY?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0A5EH     0029H     UNIT         ?PR?_LEN_HTTP_R?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0A87H     0028H     UNIT         ?PR?READONECHAR?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0AAFH     0025H     UNIT         ?PR?_DELAY_MS?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0AD4H     0025H     UNIT         ?PR?_WRITEONECHAR?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0AF9H     001FH     UNIT         ?PR?_SEND_R?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0B18H     001EH     UNIT         ?PR?_LCD_PUTS?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0B36H     001DH     UNIT         ?PR?_SEND_F?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0B53H     001DH     UNIT         ?PR?_LEN_HTTP?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0B70H     001CH     UNIT         ?PR?_LCD_SEND4BIT?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0B8CH     0017H     UNIT         ?PR?INIT_18B20?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0BA3H     0017H     UNIT         ?PR?_GETKEY?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0BBAH     0016H     UNIT         ?PR?CLEAR?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0BD0H     0015H     UNIT         ?PR?LCD_ENABLE?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0BE5H     0012H     UNIT         ?PR?_DELAY_18B20?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0BF7H     0012H     UNIT         ?PR?_LCD_SENDCOMMAND?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0C09H     0011H     UNIT         ?PR?_SEND_BYTE?CODE_DIEU_KHIEN_QUA_WIFI
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 2
+
+
+            CODE    0C1AH     000CH     UNIT         ?PR?LCD_CLEAR?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0C26H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0C32H     000BH     UNIT         ?PR?_DELAY_US?CODE_DIEU_KHIEN_QUA_WIFI
+            CODE    0C3DH     0008H     UNIT         ?PR?_LCD_PUTCHAR?CODE_DIEU_KHIEN_QUA_WIFI
+
+
+
+OVERLAY MAP OF MODULE:   hex_dieu_khien_qua_wifi (CODE_DIEU_KHIEN_QUA_WIFI)
+
+
+SEGMENT                                            DATA_GROUP 
+  +--> CALLED SEGMENT                            START    LENGTH
+----------------------------------------------------------------
+?PR?UART?CODE_DIEU_KHIEN_QUA_WIFI                -----    -----
+  +--> ?PR?CLEAR?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?XULY?CODE_DIEU_KHIEN_QUA_WIFI
+
+?PR?XULY?CODE_DIEU_KHIEN_QUA_WIFI                -----    -----
+  +--> ?CO?CODE_DIEU_KHIEN_QUA_WIFI
+
+*** NEW ROOT ***************************************************
+
+?C_C51STARTUP                                    -----    -----
+  +--> ?PR?MAIN?CODE_DIEU_KHIEN_QUA_WIFI
+
+?PR?MAIN?CODE_DIEU_KHIEN_QUA_WIFI                -----    -----
+  +--> ?PR?LCD_INIT?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_DELAY_MS?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?CO?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_LCD_PUTS?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_LCD_GOTOXY?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?LCD_CLEAR?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?WLAN_INIT?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?READTEMPERATURE?CODE_DIEU_KHIEN_Q...
+  +--> ?PR?_NUM_STR?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?KET_NOI?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?PROG_CONTROL?CODE_DIEU_KHIEN_QUA_...
+
+?PR?LCD_INIT?CODE_DIEU_KHIEN_QUA_WIFI            -----    -----
+  +--> ?PR?_LCD_SEND4BIT?CODE_DIEU_KHIEN_QUA...
+  +--> ?PR?_DELAY_MS?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?LCD_ENABLE?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_DELAY_US?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_LCD_SENDCOMMAND?CODE_DIEU_KHIEN_...
+
+?PR?LCD_ENABLE?CODE_DIEU_KHIEN_QUA_WIFI          -----    -----
+  +--> ?PR?_LCD_SEND4BIT?CODE_DIEU_KHIEN_QUA...
+  +--> ?PR?_DELAY_US?CODE_DIEU_KHIEN_QUA_WIFI
+
+?PR?_LCD_SENDCOMMAND?CODE_DIEU_KHIEN_...         -----    -----
+  +--> ?PR?LCD_ENABLE?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_LCD_SEND4BIT?CODE_DIEU_KHIEN_QUA...
+
+?PR?_LCD_PUTS?CODE_DIEU_KHIEN_QUA_WIFI           -----    -----
+  +--> ?PR?_LCD_PUTCHAR?CODE_DIEU_KHIEN_QUA_...
+
+?PR?_LCD_PUTCHAR?CODE_DIEU_KHIEN_QUA_...         -----    -----
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 3
+
+
+  +--> ?PR?_LCD_SENDCOMMAND?CODE_DIEU_KHIEN_...
+
+?PR?_LCD_GOTOXY?CODE_DIEU_KHIEN_QUA_WIFI         -----    -----
+  +--> ?CO?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_LCD_PUTS?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_DELAY_US?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_LCD_SENDCOMMAND?CODE_DIEU_KHIEN_...
+
+?PR?LCD_CLEAR?CODE_DIEU_KHIEN_QUA_WIFI           -----    -----
+  +--> ?PR?_LCD_SENDCOMMAND?CODE_DIEU_KHIEN_...
+  +--> ?PR?_DELAY_MS?CODE_DIEU_KHIEN_QUA_WIFI
+
+?PR?WLAN_INIT?CODE_DIEU_KHIEN_QUA_WIFI           0074H    0001H
+  +--> ?PR?_DELAY_MS?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_LCD_GOTOXY?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?CO?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_SEND_F?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_LCD_PUTS?CODE_DIEU_KHIEN_QUA_WIFI
+
+?PR?_SEND_F?CODE_DIEU_KHIEN_QUA_WIFI             -----    -----
+  +--> ?PR?_SEND_BYTE?CODE_DIEU_KHIEN_QUA_WIFI
+
+?PR?READTEMPERATURE?CODE_DIEU_KHIEN_Q...         -----    -----
+  +--> ?PR?INIT_18B20?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_WRITEONECHAR?CODE_DIEU_KHIEN_QUA...
+  +--> ?PR?_DELAY_18B20?CODE_DIEU_KHIEN_QUA_...
+  +--> ?PR?READONECHAR?CODE_DIEU_KHIEN_QUA_WIFI
+
+?PR?INIT_18B20?CODE_DIEU_KHIEN_QUA_WIFI          -----    -----
+  +--> ?PR?_DELAY_18B20?CODE_DIEU_KHIEN_QUA_...
+
+?PR?_DELAY_18B20?CODE_DIEU_KHIEN_QUA_...         -----    -----
+  +--> ?PR?_WRITEONECHAR?CODE_DIEU_KHIEN_QUA...
+
+?PR?READONECHAR?CODE_DIEU_KHIEN_QUA_WIFI         -----    -----
+  +--> ?PR?_DELAY_18B20?CODE_DIEU_KHIEN_QUA_...
+
+?PR?KET_NOI?CODE_DIEU_KHIEN_QUA_WIFI             0074H    0002H
+  +--> ?PR?LCD_CLEAR?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?CO?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_LCD_PUTS?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_LCD_GOTOXY?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_SEND_F?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_DELAY_MS?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?READTEMPERATURE?CODE_DIEU_KHIEN_Q...
+  +--> ?PR?_LEN_HTTP?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_NUM_STR?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_LEN_HTTP_R?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_SEND_R?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_GETKEY?CODE_DIEU_KHIEN_QUA_WIFI
+  +--> ?PR?_SEND_BUF?CODE_DIEU_KHIEN_QUA_WIFI
+
+?PR?_LEN_HTTP_R?CODE_DIEU_KHIEN_QUA_WIFI         0076H    0003H
+
+?PR?_SEND_R?CODE_DIEU_KHIEN_QUA_WIFI             0076H    0003H
+  +--> ?PR?_SEND_BYTE?CODE_DIEU_KHIEN_QUA_WIFI
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 4
+
+
+?PR?_SEND_BUF?CODE_DIEU_KHIEN_QUA_WIFI           0076H    0003H
+  +--> ?PR?_SEND_BYTE?CODE_DIEU_KHIEN_QUA_WIFI
+
+
+
+SYMBOL TABLE OF MODULE:  hex_dieu_khien_qua_wifi (CODE_DIEU_KHIEN_QUA_WIFI)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        CODE_DIEU_KHIEN_QUA_WIFI
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0AF9H         PUBLIC        _send_r
+  C:0BD3H         PUBLIC        LCD_Enable
+  C:0BECH         PUBLIC        _delay_18B20
+  D:0090H         PUBLIC        P1
+  C:0BF7H         PUBLIC        _LCD_SendCommand
+  C:0B8CH         PUBLIC        Init_18B20
+  D:0008H         PUBLIC        control
+  B:00A8H.7       PUBLIC        EA
+  C:0BBAH         PUBLIC        clear
+  C:0BA3H         PUBLIC        _getkey
+  C:0946H         PUBLIC        _num_str
+  C:0C3DH         PUBLIC        _lcd_putchar
+  B:0090H.0       PUBLIC        P1_0
+  B:0090H.1       PUBLIC        P1_1
+  B:0090H.2       PUBLIC        P1_2
+  B:0090H.3       PUBLIC        P1_3
+  B:0080H.4       PUBLIC        P0_4
+  C:09E9H         PUBLIC        ReadTemperature
+  B:0090H.4       PUBLIC        P1_4
+  B:0080H.5       PUBLIC        P0_5
+  C:0B70H         PUBLIC        _LCD_Send4Bit
+  B:00A0H.4       PUBLIC        P2_4
+  B:0090H.5       PUBLIC        P1_5
+  B:0090H.6       PUBLIC        P1_6
+  D:000EH         PUBLIC        stt_ok
+  D:000FH         PUBLIC        uptime
+  B:00A8H.4       PUBLIC        ES
+  B:0090H.7       PUBLIC        P1_7
+  B:00A0H.7       PUBLIC        P2_7
+  B:00B0H.7       PUBLIC        P3_7
+  B:0098H.0       PUBLIC        RI
+  B:0098H.1       PUBLIC        TI
+  C:0C1AH         PUBLIC        lcd_clear
+  C:08E0H         PUBLIC        prog_control
+  D:0010H         PUBLIC        http_buffer
+  C:0A87H         PUBLIC        ReadOneChar
+  C:05C4H         PUBLIC        main
+  D:0099H         PUBLIC        SBUF
+  C:0AD4H         PUBLIC        _WriteOneChar
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  C:0A5EH         PUBLIC        _len_http_r
+  D:005BH         PUBLIC        temp
+  C:07B5H         PUBLIC        uart
+  D:005CH         PUBLIC        get
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 5
+
+
+  D:005DH         PUBLIC        time_1
+  C:0C0FH         PUBLIC        _send_byte
+  C:0A3EH         PUBLIC        _lcd_gotoxy
+  D:005EH         PUBLIC        err
+  C:0850H         PUBLIC        wlan_init
+  C:0003H         PUBLIC        _send_buf
+  C:09A4H         PUBLIC        lcd_init
+  D:005FH         PUBLIC        ok_200
+  D:008DH         PUBLIC        TH1
+  D:008BH         PUBLIC        TL1
+  C:0AB3H         PUBLIC        _delay_ms
+  C:0710H         PUBLIC        xuly
+  B:0088H.6       PUBLIC        TR1
+  C:0C32H         PUBLIC        _delay_us
+  D:0060H         PUBLIC        tm
+  D:0061H         PUBLIC        tn
+  C:0B53H         PUBLIC        _len_http
+  C:0B23H         PUBLIC        _lcd_puts
+  D:0062H         PUBLIC        send_ok
+  D:0063H         PUBLIC        k
+  D:0064H         PUBLIC        m
+  C:0239H         PUBLIC        ket_noi
+  D:0065H         PUBLIC        u_data
+  C:0B36H         PUBLIC        _send_f
+  D:0066H         PUBLIC        linked
+  D:0067H         PUBLIC        str_len
+  D:006CH         PUBLIC        buffer
+  -------         PROC          _DELAY_US
+  D:0006H         SYMBOL        t
+  C:0C32H         LINE#         35
+  C:0C32H         LINE#         36
+  C:0C3CH         LINE#         37
+  -------         ENDPROC       _DELAY_US
+  C:0AAFH         SYMBOL        L?0172
+  -------         PROC          L?0171
+  -------         ENDPROC       L?0171
+  C:0AAFH         SYMBOL        L?0172
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0003H         SYMBOL        j
+  -------         ENDDO         
+  C:0AB3H         LINE#         38
+  C:0AB3H         LINE#         41
+  C:0ABDH         LINE#         42
+  C:0AD3H         LINE#         43
+  -------         ENDPROC       _DELAY_MS
+  C:0BE8H         SYMBOL        L?0174
+  -------         PROC          L?0173
+  -------         ENDPROC       L?0173
+  C:0BE8H         SYMBOL        L?0174
+  -------         PROC          _DELAY_18B20
+  D:0006H         SYMBOL        ti
+  C:0BECH         LINE#         45
+  C:0BECH         LINE#         46
+  C:0BF6H         LINE#         47
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 6
+
+
+  -------         ENDPROC       _DELAY_18B20
+  -------         PROC          INIT_18B20
+  C:0B8CH         LINE#         48
+  C:0B8CH         LINE#         49
+  C:0B8EH         LINE#         50
+  C:0B91H         LINE#         51
+  C:0B93H         LINE#         52
+  C:0B9AH         LINE#         53
+  C:0B9CH         LINE#         54
+  -------         ENDPROC       INIT_18B20
+  -------         PROC          READONECHAR
+  -------         DO            
+  D:0005H         SYMBOL        i
+  D:0003H         SYMBOL        dat
+  -------         ENDDO         
+  C:0A87H         LINE#         56
+  C:0A87H         LINE#         57
+  C:0A88H         LINE#         58
+  C:0A89H         LINE#         59
+  C:0A95H         LINE#         60
+  C:0A97H         LINE#         61
+  C:0A9AH         LINE#         62
+  C:0A9CH         LINE#         63
+  C:0A9FH         LINE#         64
+  C:0AA2H         LINE#         65
+  C:0AA9H         LINE#         66
+  C:0AACH         LINE#         67
+  C:0AAEH         LINE#         68
+  -------         ENDPROC       READONECHAR
+  -------         PROC          _WRITEONECHAR
+  D:0005H         SYMBOL        dat
+  -------         DO            
+  D:0003H         SYMBOL        i
+  -------         ENDDO         
+  C:0AD4H         LINE#         69
+  C:0AD6H         LINE#         70
+  C:0AD6H         LINE#         71
+  C:0AE2H         LINE#         72
+  C:0AE4H         LINE#         73
+  C:0AE8H         LINE#         74
+  C:0AEFH         LINE#         75
+  C:0AF1H         LINE#         76
+  C:0AF5H         LINE#         77
+  C:0AF8H         LINE#         78
+  -------         ENDPROC       _WRITEONECHAR
+  -------         PROC          READTEMPERATURE
+  -------         DO            
+  D:0002H         SYMBOL        a
+  D:0007H         SYMBOL        b
+  -------         ENDDO         
+  C:09E9H         LINE#         79
+  C:09E9H         LINE#         80
+  C:09EBH         LINE#         81
+  C:09ECH         LINE#         82
+  C:09EEH         LINE#         83
+  C:09F1H         LINE#         84
+  C:09F6H         LINE#         85
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 7
+
+
+  C:09F8H         LINE#         86
+  C:09FBH         LINE#         87
+  C:09FEH         LINE#         88
+  C:0A03H         LINE#         89
+  C:0A05H         LINE#         90
+  C:0A08H         LINE#         91
+  C:0A0DH         LINE#         92
+  C:0A10H         LINE#         93
+  C:0A25H         LINE#         94
+  C:0A29H         LINE#         95
+  C:0A2BH         LINE#         96
+  -------         ENDPROC       READTEMPERATURE
+  -------         PROC          L?0175
+  -------         ENDPROC       L?0175
+  -------         PROC          LCD_ENABLE
+  C:0BD3H         LINE#         98
+  C:0BD3H         LINE#         99
+  C:0BD5H         LINE#         100
+  C:0BDCH         LINE#         101
+  C:0BDEH         LINE#         102
+  -------         ENDPROC       LCD_ENABLE
+  -------         PROC          _LCD_SEND4BIT
+  D:0007H         SYMBOL        Data
+  C:0B70H         LINE#         104
+  C:0B70H         LINE#         105
+  C:0B74H         LINE#         106
+  C:0B7AH         LINE#         107
+  C:0B82H         LINE#         108
+  C:0B8BH         LINE#         109
+  -------         ENDPROC       _LCD_SEND4BIT
+  -------         PROC          _LCD_SENDCOMMAND
+  D:0005H         SYMBOL        command
+  C:0BF7H         LINE#         110
+  C:0BF9H         LINE#         111
+  C:0BFEH         LINE#         112
+  C:0C01H         LINE#         113
+  C:0C06H         LINE#         114
+  -------         ENDPROC       _LCD_SENDCOMMAND
+  -------         PROC          LCD_CLEAR
+  C:0C1AH         LINE#         116
+  C:0C1AH         LINE#         117
+  C:0C1FH         LINE#         118
+  -------         ENDPROC       LCD_CLEAR
+  -------         PROC          LCD_INIT
+  C:09A4H         LINE#         120
+  C:09A4H         LINE#         121
+  C:09A9H         LINE#         122
+  C:09B0H         LINE#         123
+  C:09B2H         LINE#         124
+  C:09B4H         LINE#         125
+  C:09B6H         LINE#         126
+  C:09B9H         LINE#         127
+  C:09C0H         LINE#         128
+  C:09C3H         LINE#         129
+  C:09CAH         LINE#         130
+  C:09CDH         LINE#         131
+  C:09D2H         LINE#         132
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 8
+
+
+  C:09D5H         LINE#         133
+  C:09DAH         LINE#         134
+  C:09DFH         LINE#         135
+  C:09E4H         LINE#         136
+  -------         ENDPROC       LCD_INIT
+  C:0A35H         SYMBOL        L?0167
+  C:0A3AH         SYMBOL        L?0168
+  -------         PROC          L?0166
+  -------         ENDPROC       L?0166
+  C:0A35H         SYMBOL        L?0167
+  C:0A3AH         SYMBOL        L?0168
+  -------         PROC          _LCD_GOTOXY
+  D:0007H         SYMBOL        x
+  D:0005H         SYMBOL        y
+  -------         DO            
+  D:0003H         SYMBOL        address
+  -------         ENDDO         
+  C:0A3EH         LINE#         138
+  C:0A3EH         LINE#         140
+  C:0A47H         LINE#         141
+  C:0A4BH         LINE#         142
+  C:0A52H         LINE#         143
+  C:0A57H         LINE#         144
+  -------         ENDPROC       _LCD_GOTOXY
+  -------         PROC          _LCD_PUTCHAR
+  D:0007H         SYMBOL        Data
+  C:0C3DH         LINE#         146
+  C:0C3DH         LINE#         147
+  C:0C3FH         LINE#         148
+  C:0C42H         LINE#         149
+  C:0C44H         LINE#         150
+  -------         ENDPROC       _LCD_PUTCHAR
+  C:0B1DH         SYMBOL        L?0170
+  -------         PROC          L?0169
+  -------         ENDPROC       L?0169
+  C:0B1DH         SYMBOL        L?0170
+  -------         PROC          _LCD_PUTS
+  D:0001H         SYMBOL        s
+  C:0B23H         LINE#         151
+  C:0B23H         LINE#         152
+  C:0B29H         LINE#         153
+  C:0B2CH         LINE#         154
+  C:0B33H         LINE#         155
+  C:0B35H         LINE#         156
+  -------         ENDPROC       _LCD_PUTS
+  -------         PROC          _NUM_STR
+  D:0007H         SYMBOL        num
+  C:0946H         LINE#         157
+  C:0946H         LINE#         158
+  C:0953H         LINE#         159
+  C:095CH         LINE#         160
+  C:096BH         LINE#         161
+  C:0976H         LINE#         162
+  C:0983H         LINE#         163
+  C:098BH         LINE#         164
+  C:0996H         LINE#         165
+  C:0999H         LINE#         166
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 9
+
+
+  C:099AH         LINE#         167
+  C:099EH         LINE#         168
+  C:09A1H         LINE#         169
+  C:09A3H         LINE#         170
+  C:09A3H         LINE#         171
+  -------         ENDPROC       _NUM_STR
+  -------         PROC          L?0176
+  -------         ENDPROC       L?0176
+  -------         PROC          _SEND_BYTE
+  D:0007H         SYMBOL        udata
+  C:0C0FH         LINE#         173
+  C:0C0FH         LINE#         174
+  C:0C12H         LINE#         175
+  C:0C14H         LINE#         176
+  C:0C19H         LINE#         177
+  C:0C19H         LINE#         178
+  -------         ENDPROC       _SEND_BYTE
+  -------         PROC          _SEND_R
+  D:0076H         SYMBOL        u
+  C:0AF9H         LINE#         179
+  C:0AFFH         LINE#         180
+  C:0B17H         LINE#         181
+  -------         ENDPROC       _SEND_R
+  -------         PROC          _SEND_BUF
+  D:0076H         SYMBOL        u
+  D:0005H         SYMBOL        ulen
+  -------         DO            
+  D:0006H         SYMBOL        z
+  -------         ENDDO         
+  C:0003H         LINE#         182
+  C:0009H         LINE#         184
+  C:0022H         LINE#         185
+  -------         ENDPROC       _SEND_BUF
+  -------         PROC          _SEND_F
+  D:0004H         SYMBOL        u
+  C:0B36H         LINE#         186
+  C:0B3AH         LINE#         187
+  C:0B52H         LINE#         188
+  -------         ENDPROC       _SEND_F
+  -------         PROC          CLEAR
+  -------         DO            
+  D:0007H         SYMBOL        z
+  -------         ENDDO         
+  C:0BBAH         LINE#         189
+  C:0BBAH         LINE#         191
+  C:0BCFH         LINE#         192
+  -------         ENDPROC       CLEAR
+  -------         PROC          _LEN_HTTP
+  D:0007H         SYMBOL        len
+  D:0004H         SYMBOL        d
+  C:0B53H         LINE#         193
+  C:0B53H         LINE#         194
+  C:0B5BH         LINE#         195
+  C:0B6CH         LINE#         196
+  C:0B6DH         LINE#         197
+  C:0B6FH         LINE#         198
+  C:0B6FH         LINE#         199
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 10
+
+
+  -------         ENDPROC       _LEN_HTTP
+  -------         PROC          _LEN_HTTP_R
+  D:0007H         SYMBOL        len
+  D:0076H         SYMBOL        d
+  C:0A5EH         LINE#         200
+  C:0A64H         LINE#         201
+  C:0A6FH         LINE#         202
+  C:0A83H         LINE#         203
+  C:0A84H         LINE#         204
+  C:0A86H         LINE#         205
+  C:0A86H         LINE#         206
+  -------         ENDPROC       _LEN_HTTP_R
+  -------         PROC          WLAN_INIT
+  -------         DO            
+  D:0074H         SYMBOL        e
+  -------         ENDDO         
+  C:0850H         LINE#         207
+  C:0850H         LINE#         208
+  C:0853H         LINE#         209
+  C:0855H         LINE#         210
+  C:085CH         LINE#         211
+  C:085EH         LINE#         212
+  C:0865H         LINE#         213
+  C:0868H         LINE#         214
+  C:086EH         LINE#         215
+  C:0872H         LINE#         216
+  C:0879H         LINE#         217
+  C:0880H         LINE#         218
+  C:0887H         LINE#         219
+  C:0898H         LINE#         220
+  C:089CH         LINE#         221
+  C:08A5H         LINE#         222
+  C:08AEH         LINE#         223
+  C:08AEH         LINE#         224
+  C:08B0H         LINE#         225
+  C:08B7H         LINE#         226
+  C:08CFH         LINE#         227
+  C:08CFH         LINE#         228
+  C:08CFH         LINE#         229
+  C:08CFH         LINE#         230
+  C:08D6H         LINE#         231
+  C:08DDH         LINE#         233
+  -------         ENDPROC       WLAN_INIT
+  -------         PROC          _GETKEY
+  D:0007H         SYMBOL        key
+  C:0BA3H         LINE#         235
+  C:0BA3H         LINE#         236
+  C:0BA5H         LINE#         237
+  C:0BA8H         LINE#         238
+  C:0BB3H         LINE#         239
+  C:0BB9H         LINE#         240
+  -------         ENDPROC       _GETKEY
+  -------         PROC          KET_NOI
+  -------         DO            
+  D:0074H         SYMBOL        do_dai
+  D:0075H         SYMBOL        f
+  C:0409H         SYMBOL        quit
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 11
+
+
+  -------         ENDDO         
+  C:0239H         LINE#         241
+  C:0239H         LINE#         242
+  C:023CH         LINE#         243
+  C:023EH         LINE#         244
+  C:024AH         LINE#         245
+  C:0251H         LINE#         246
+  C:0254H         LINE#         247
+  C:025DH         LINE#         248
+  C:0261H         LINE#         249
+  C:0263H         LINE#         250
+  C:0266H         LINE#         251
+  C:026FH         LINE#         252
+  C:0276H         LINE#         253
+  C:0276H         LINE#         254
+  C:0279H         LINE#         255
+  C:0280H         LINE#         256
+  C:0284H         LINE#         257
+  C:0290H         LINE#         258
+  C:0299H         LINE#         259
+  C:02A1H         LINE#         260
+  C:02A1H         LINE#         261
+  C:02A7H         LINE#         262
+  C:02AEH         LINE#         263
+  C:02B0H         LINE#         264
+  C:02B2H         LINE#         265
+  C:02BEH         LINE#         266
+  C:02C1H         LINE#         267
+  C:02CCH         LINE#         268
+  C:02D1H         LINE#         269
+  C:02DEH         LINE#         270
+  C:02F1H         LINE#         271
+  C:02FCH         LINE#         272
+  C:0305H         LINE#         273
+  C:0310H         LINE#         274
+  C:0317H         LINE#         275
+  C:032EH         LINE#         276
+  C:0336H         LINE#         277
+  C:0344H         LINE#         278
+  C:034FH         LINE#         279
+  C:0357H         LINE#         280
+  C:035EH         LINE#         281
+  C:0362H         LINE#         282
+  C:036BH         LINE#         283
+  C:036BH         LINE#         284
+  C:036DH         LINE#         285
+  C:036DH         LINE#         286
+  C:0373H         LINE#         287
+  C:037AH         LINE#         288
+  C:037CH         LINE#         289
+  C:037EH         LINE#         290
+  C:037EH         LINE#         291
+  C:0381H         LINE#         292
+  C:0385H         LINE#         293
+  C:0388H         LINE#         294
+  C:0391H         LINE#         295
+  C:0399H         LINE#         296
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 12
+
+
+  C:039BH         LINE#         297
+  C:039EH         LINE#         298
+  C:03A4H         LINE#         299
+  C:03ADH         LINE#         300
+  C:03AFH         LINE#         301
+  C:03B6H         LINE#         302
+  C:03BCH         LINE#         303
+  C:03C8H         LINE#         304
+  C:03CFH         LINE#         305
+  C:03D7H         LINE#         306
+  C:03D7H         LINE#         307
+  C:03DBH         LINE#         308
+  C:03E1H         LINE#         309
+  C:03E5H         LINE#         310
+  C:03F1H         LINE#         311
+  C:03F7H         LINE#         312
+  C:03FAH         LINE#         313
+  C:03FDH         LINE#         314
+  C:0406H         LINE#         315
+  C:0406H         LINE#         316
+  C:0409H         LINE#         317
+  -------         ENDPROC       KET_NOI
+  -------         PROC          XULY
+  -------         DO            
+  D:0007H         SYMBOL        tinh
+  -------         ENDDO         
+  C:0710H         LINE#         319
+  C:0710H         LINE#         321
+  C:0718H         LINE#         322
+  C:071DH         LINE#         323
+  C:0734H         LINE#         324
+  C:0735H         LINE#         325
+  C:074FH         LINE#         326
+  C:0767H         LINE#         327
+  C:0781H         LINE#         328
+  C:079BH         LINE#         329
+  C:07B4H         LINE#         330
+  C:07B4H         LINE#         331
+  -------         ENDPROC       XULY
+  -------         PROC          UART
+  C:07B5H         LINE#         333
+  C:07D2H         LINE#         334
+  C:07D5H         LINE#         335
+  C:07D8H         LINE#         336
+  C:07F5H         LINE#         338
+  C:080EH         LINE#         339
+  C:0819H         LINE#         340
+  C:0820H         LINE#         341
+  C:0833H         LINE#         342
+  C:0833H         LINE#         343
+  C:0835H         LINE#         344
+  C:0835H         LINE#         345
+  -------         ENDPROC       UART
+  -------         PROC          PROG_CONTROL
+  C:08E0H         LINE#         346
+  C:08E0H         LINE#         347
+  C:08F1H         LINE#         348
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 13
+
+
+  C:0902H         LINE#         349
+  C:0913H         LINE#         350
+  C:0924H         LINE#         351
+  C:0935H         LINE#         352
+  C:0945H         LINE#         353
+  -------         ENDPROC       PROG_CONTROL
+  -------         PROC          MAIN
+  -------         DO            
+  C:05FBH         SYMBOL        start
+  -------         ENDDO         
+  C:05C4H         LINE#         354
+  C:05C4H         LINE#         356
+  C:05CDH         LINE#         357
+  C:05DBH         LINE#         358
+  C:05DEH         LINE#         359
+  C:05E1H         LINE#         360
+  C:05EAH         LINE#         361
+  C:05EFH         LINE#         362
+  C:05FBH         LINE#         363
+  C:061EH         LINE#         365
+  C:062AH         LINE#         366
+  C:062DH         LINE#         367
+  C:0637H         LINE#         369
+  C:0643H         LINE#         370
+  C:0646H         LINE#         371
+  C:0657H         LINE#         372
+  C:065EH         LINE#         373
+  C:0661H         LINE#         374
+  C:066EH         LINE#         375
+  C:0675H         LINE#         376
+  C:0681H         LINE#         377
+  C:068AH         LINE#         378
+  C:068AH         LINE#         379
+  C:068CH         LINE#         380
+  C:068FH         LINE#         381
+  C:06A6H         LINE#         382
+  C:06A6H         LINE#         383
+  C:06ACH         LINE#         384
+  C:06ACH         LINE#         385
+  C:06ACH         LINE#         386
+  C:06B7H         LINE#         387
+  C:06B9H         LINE#         388
+  C:06C5H         LINE#         389
+  C:06D6H         LINE#         390
+  C:06E0H         LINE#         391
+  C:06E0H         LINE#         392
+  C:06EDH         LINE#         393
+  C:06F0H         LINE#         394
+  C:06F3H         LINE#         395
+  C:06F6H         LINE#         396
+  C:06F6H         LINE#         397
+  C:0707H         LINE#         398
+  C:070EH         LINE#         399
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        CODE_DIEU_KHIEN_QUA_WIFI
+
+  -------         MODULE        ?C?CLDPTR
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/02/2018  15:51:25  PAGE 14
+
+
+  C:0410H         PUBLIC        ?C?CLDPTR
+  -------         ENDMOD        ?C?CLDPTR
+
+  -------         MODULE        ?C?STRCMP
+  C:05A7H         PUBLIC        ?C?STRCMP
+  -------         ENDMOD        ?C?STRCMP
+
+Program Size: data=122.0 xdata=0 code=3141
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
